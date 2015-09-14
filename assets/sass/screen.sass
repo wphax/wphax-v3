@@ -1,1 +1,47 @@
 @import compass/reset
+@import fonts
+
+=valign( $position: relative )
+	position: $position
+	top: 50%
+	-webkit-transform: translateY( -50% )
+	-ms-transform: translateY( -50% )
+	transform: translateY( -50% )
+
+body
+	font-family: 'Raleway', sans-serif
+	font-size: 14px
+
+header
+	overflow: auto
+	height: 6em
+	text-transform: uppercase
+
+	#logo, nav
+
+	#logo
+		float: left
+		width: 20%
+		text-align: center
+
+	nav
+		float: right
+		text-align: right
+		width: 80%
+		height: 100%
+
+		ul
+			height: 100%
+
+			li
+				height: 100%
+				display: inline-block
+
+				a
+					display: block
+					padding: 0 3em
+					line-height: 6em
+					height: 100%
+
+	#logo, nav ul li a
+		+valign
